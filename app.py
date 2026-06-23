@@ -105,7 +105,7 @@ client = Client()
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_excel("D:\\walmart_USA_Terms.xlsx")
+        df = pd.read_excel('walmart_USA_Terms.xlsx')
         df.columns = df.columns.str.strip()
         return df
     except:
